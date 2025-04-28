@@ -75,9 +75,9 @@ class CalculadoraIntereses(tk.Tk):
         self.iconphoto(False, tk.PhotoImage(data=""))  # Placeholder para ícono
         
         # Variables para los inputs
-        self.capital = tk.DoubleVar(value=10000)
-        self.tasa = tk.DoubleVar(value=3)
-        self.tiempo = tk.IntVar(value=15)
+        self.capital = tk.DoubleVar(value=1000)
+        self.tasa = tk.DoubleVar(value=10)
+        self.tiempo = tk.IntVar(value=5)
         self.capitalizacion = tk.IntVar(value=12)
         
         # Crear el frame principal
@@ -396,9 +396,9 @@ class CalculadoraIntereses(tk.Tk):
     
     def limpiar(self):
         """Reinicia todos los valores a su estado por defecto."""
-        self.capital.set(10000)
-        self.tasa.set(5)
-        self.tiempo.set(10)
+        self.capital.set(1000)
+        self.tasa.set(10)
+        self.tiempo.set(5)
         self.capitalizacion.set(1)
         self.actualizar_graficas()
     
